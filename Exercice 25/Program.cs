@@ -10,14 +10,17 @@ namespace Exercice_25
     {
         static void Main(string[] args)
         {
+            //declaration
             int vlr, vlre;
             char rep='O';
             bool txt=false;
 
+            //demande
             Console.Write("Veuillez saisir plusieurs valeurs : ");
             vlr = int.Parse(Console.ReadLine());
             vlre = vlr;
 
+            //boucle
             do
             {
                 Console.Write("Veuillez saisir plusieurs valeurs : ");
@@ -35,6 +38,7 @@ namespace Exercice_25
                 rep = char.Parse(Console.ReadLine());
             } while (rep != 'N');
             
+            //texte
             if (txt==true)
             {
                 Console.WriteLine("La suite de valeurs saisies est strictement croissante.");
